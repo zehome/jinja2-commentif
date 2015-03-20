@@ -17,7 +17,7 @@ class CommentIfExtension(Extension):
     tags = set(['commentif'])
 
     def parse(self, parser):
-        lineno = parser.stream.next().lineno
+        lineno = next(parser.stream).lineno
         args = [ parser.parse_expression(), parser.parse_expression() ]
         body = parser.parse_statements(['name:endcommentif'], drop_needle=True)
         return nodes.CallBlock(self.call_method('_comment_if', args),

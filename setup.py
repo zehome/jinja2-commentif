@@ -3,7 +3,7 @@ from setuptools import setup
 setup (
     name='jinja2-commentif',
     version='0.1',
-    description='Jinja2 extension to add text commented out',
+    description='Jinja2 extension to automatically add a comment prefix on each line',
     author='Laurent Coustet',
     author_email='ed@zehome.com',
     url='https://github.com/zehome/jinja2-commentif',
