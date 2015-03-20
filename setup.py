@@ -7,7 +7,7 @@ setup (
     author='Laurent Coustet',
     author_email='ed@zehome.com',
     url='https://github.com/zehome/jinja2-commentif',
-    license='GNU GPLv3',
+    license='BSD2',
     packages=['jinja2_commentif'],
     install_requires=[
         'Jinja2>=2.4',
